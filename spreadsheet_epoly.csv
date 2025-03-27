@@ -1,0 +1,10 @@
+Polymer Matrix,Fiber,Fiber Concentration (wt%),Filler,Filler Concentration (wt%),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry,Flammability Oxygen Index (%),Self-Burning Time (s),Mass Loss at Ignition (%),Melt Flow Index (g/10 min)
+HDPE,Sisal,,Nano-clay,3,,,,,,,,,,,,,,
+Epoxy,Flax,,CNTs,2,,,,,,,,,,,,,,
+Epoxy,,,MWCNT + nano-diamond,0.125,,,,,,,,,,,,,,
+LDPE,OPEFB,,CB,20,,,,,,0.1945,,,,,,,,
+Epoxy,,,α-cellulosic micro-filler (Cocos nucifera),15,,,,,,,,365,,,,,,
+Concrete,,,Biochar,1,,,,,,0.219,,,,,,,,
+Concrete,,,Biochar,2,,,,,,0.1945,,,,,,,,
+Polyurethane,Kenaf core,,TMPS-treated silane,,,,,,,,,,27,,,,,
+Polyurethane,Kenaf core,,Silane,,,,,,,,,,19,,,,,
