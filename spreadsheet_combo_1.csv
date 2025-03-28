@@ -1,0 +1,41 @@
+Polymer Matrix,Filler,Filler Concentration (wt%),Fiber,Fiber Concentration (wt%),Matrix Density (g/cm³),Filler Density (g/cm³),Fiber Density (g/cm³),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry
+LDPE,Basalt,23.08,,,0.925,2.907,,11,,,,,145,273,,,Particulate (≤140 μm)
+LDPE,Basalt,28.57,,,0.925,2.907,,39,,9.88,,250,,145,273,,Particulate (≤140 μm)
+LDPE,Basalt,33.33,,,0.925,2.907,,21,,,,,145,273,,,Particulate (≤140 μm)
+HDPE,Basalt,23.08,,,0.95,2.907,,60,,,,,119,284,,,Particulate (≤140 μm)
+HDPE,Basalt,28.57,,,0.95,2.907,,80,524,9.88,,250,,119,284,,Particulate (≤140 μm)
+HDPE,Basalt,33.33,,,0.95,2.907,,60,,,,,119,284,,,Particulate (≤140 μm)
+PP,Basalt,28.57,,,0.925,2.907,,,1970,21.5,,4.33,,,,,Particulate (≤140 μm)
+Epoxy,CNTs,2,Flax,,1.15,1.35,1.47,,,,,,,,,,Nanotubes
+Epoxy,MWCNT + nano-diamond,0.125,,,1.15,,,,,,,,,,,,Nanotubes + Nanoparticles
+LDPE,CB + nano-clay,20,OPEFB,,0.925,,,,,,,,,,,,Particulate + Nanoplatelets
+Epoxy,α-cellulosic micro-filler (Cocos nucifera),15,,,1.15,0.5,,,,,,,,365,,,Micro-powder
+Polyurethane,TMPS-treated silane,,Kenaf core,,1.15,,0.288,,,,,365,,,,,Core-shell
+Polyurethane,Silane (Untreated),,Kenaf core,,1.15,0.00134,0.288,,,,,350,,,,,Agglomerate
+Epoxy,,,Sisal + Glass,,1.15,,,,,,,,,,,,
+Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,60,
+Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,50,
+Chlorinated polyethylene (CPE),Ketjen carbon black (K-CB),30,,,0.945,,,,,,,,,,,38.4,
+Phenolic resin,Carbon black (CB) nanoparticles,,,,1.665,,,,,,,,,,,30,nanoparticles
+Phenolic resin,Carbon black (CB) nanoparticles,,,,1.665,1.95,,,,,,,,,,40,nanoparticles
+Epoxy,Graphene,15,,,1.25,2.267,,,,,,,,,,20,
+Epoxy,Graphene,15,,,1.25,2.267,,,,,,,,,,20,
+PMMA,Graphene,3.3,,,1.18,2.267,,,,,,,,,,13,
+PMMA,Graphene,3.3,,,1.18,2.267,,,,,,,,,,19,
+PEI (polyetherimide),Graphene@Fe₃O₄,10,,,1.27,,,,,,,,,,,41.5,
+"Nylon 6,6",,,Long carbon fibers,30,1.14,,1.875,,,,,,,,,45,
+"Nylon 6,6",,,Long carbon fibers,30,1.14,,1.875,,,,,,,,,75,
+Polysulfone (PSU),,,Carbon nanofibers (CNF),10,1.24,,1.125,,,,,,,,,19,
+Polysulfone (PSU),,,Carbon nanofibers (CNF),10,1.24,,1.125,,,,,,,,,45,
+Polyaniline (PANI),MWCNTs,7,,,1.245,,,,,,,,,,,27.5,
+Polyaniline (PANI),MWCNTs,7,,,1.245,0.11,,,,,,,,,,39.2,
+PVDF,MWCNTs,15,,,1.78,0.11,,,,,,,,,,56,
+Epoxy,Reduced graphene oxide (rGO)-CF + Fe₃O₄ nanoparticles,,,,1.25,,,,,,,,,,,31.3,
+Epoxy,Reduced graphene oxide (rGO)-CF + Fe₃O₄ nanoparticles,,,,1.25,,,,,,,,,,,51.1,
+PDMS,MXene foam,,,,1.03,,,,,,,,,,,70.5,foam (2mm thickness)
+Synthetic Leather,Cu@Ag nanoflakes,35.03,,,0.9,8.9,,,,,,,,,,100,nanoflakes
+Waterborne polyurethane (WPU),Ag nanowires,28.6,,,,0.785,,,,38.5,,,,,,64,nanowires
+PANI,Li₀.₅Fe₂.₅₋ₓGdₓO₄ ferrite nanoparticles,,,,1.245,,,,,,,,,,,41,nanoparticles
+PANI,Li₀.₅Fe₂.₅₋ₓGdₓO₄ ferrite nanoparticles,,,,1.245,,,,,,,,,,,42,nanoparticles
+Polystyrene (PS),Ag-coated hollow PPy microspheres,10 Ag,,,1.005,,,,,,,,,,,23,microspheres
+Polystyrene (PS),Ag-coated hollow PPy microspheres,10 Ag,,,1.005,,,,,,,,,,,59,microspheres

@@ -1,18 +1,18 @@
-Polymer Matrix,Filler,Filler Concentration (wt%),Fiber,Fiber Concentration (wt%),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry
-LDPE,Basalt,23.08,,,11,,,,,,145,273,,Particulate (≤140 μm)
-LDPE,Basalt,28.57,,,39,,9.88,,250,,145,273,,Particulate (≤140 μm)
-LDPE,Basalt,33.33,,,21,,,,,,145,273,,Particulate (≤140 μm)
-HDPE,Basalt,23.08,,,60,,,,,,119,284,,Particulate (≤140 μm)
-HDPE,Basalt,28.57,,,80,524,9.88,,250,,119,284,,Particulate (≤140 μm)
-HDPE,Basalt,33.33,,,60,,,,,,119,284,,Particulate (≤140 μm)
-PP,Basalt,28.57,,,,1970,21.5,,4.33,,,,,Particulate (≤140 μm)
-Epoxy,CNTs,2,Flax,,,,,,,,,,,Nanotubes
-Epoxy,MWCNT + nano-diamond,0.125,,,,,,,,,,,,Nanotubes + Nanoparticles
-LDPE,CB + nano-clay,20,OPEFB,,,,,,,,,,,Particulate + Nanoplatelets
-Epoxy,α-cellulosic micro-filler (Cocos nucifera),15,,,,,,,,,,365,,Micro-powder
-Concrete,Biochar,1,,,,,,,,0.219,,,,Micro-powder
-Concrete,Biochar,2,,,,,,,,0.1945,,,,Micro-powder
-Polyurethane,TMPS-treated silane,,Kenaf core,,,,,,,,,365,,Core-shell
-Polyurethane,Silane (Untreated),,Kenaf core,,,,,,,,,350,,Agglomerate
-PP,,40,Wood flour (513 µm),,,3200,21.7,,,,,,,
-Epoxy,,,Sisal + Glass,,,,,,,,,,,
+Polymer Matrix,Filler,Filler Concentration (wt%),Fiber,Fiber Concentration (wt%),Matrix Density (g/cm³),Filler Density (g/cm³),Fiber Density (g/cm³),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry
+LDPE,Basalt,23.08,,,0.925,2.907,,11,,,,,145,273,,Particulate (≤140 μm)
+LDPE,Basalt,28.57,,,0.925,2.907,,39,,9.88,,250,,145,273,,Particulate (≤140 μm)
+LDPE,Basalt,33.33,,,0.925,2.907,,21,,,,,145,273,,Particulate (≤140 μm)
+HDPE,Basalt,23.08,,,0.95,2.907,,60,,,,,119,284,,Particulate (≤140 μm)
+HDPE,Basalt,28.57,,,0.95,2.907,,80,524,9.88,,250,,119,284,,Particulate (≤140 μm)
+HDPE,Basalt,33.33,,,0.95,2.907,,60,,,,,119,284,,Particulate (≤140 μm)
+PP,Basalt,28.57,,,0.9075,2.907,,,1970,21.5,,4.33,,,,,Particulate (≤140 μm)
+Epoxy,CNTs,2,Flax,,1.15,1.35,1.47,,,,,,,,,Nanotubes
+Epoxy,MWCNT + nano-diamond,0.125,,,1.15,,,,,,,,,,,Nanotubes + Nanoparticles
+LDPE,CB + nano-clay,20,OPEFB,,0.925,,,,,,,,,,,Particulate + Nanoplatelets
+Epoxy,α-cellulosic micro-filler (Cocos nucifera),15,,,1.15,0.5,,,,,,,365,,Micro-powder
+Concrete,Biochar,1,,,2.41,1.75,,,,0.219,,,,,Micro-powder
+Concrete,Biochar,2,,,2.41,1.75,,,,0.1945,,,,,Micro-powder
+Polyurethane,TMPS-treated silane,,Kenaf core,,1.15,,0.288,,,,,365,,Core-shell
+Polyurethane,Silane (Untreated),,Kenaf core,,1.15,0.00134,0.288,,,,,350,,Agglomerate
+PP,,40,Wood flour (513 µm),,0.9075,,0.205,,,3200,21.7,,,,,
+Epoxy,,,Sisal + Glass,,1.15,,,,,,,,,,

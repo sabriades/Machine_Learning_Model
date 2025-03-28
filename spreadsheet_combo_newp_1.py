@@ -1,18 +1,69 @@
 import csv
 
+# Header con le nuove colonne aggiunte
 headers = [
     "Polymer Matrix", "Filler", "Filler Concentration (wt%)", "Fiber", "Fiber Concentration (wt%)",
     "Matrix Density (g/cm³)", "Filler Density (g/cm³)", "Fiber Density (g/cm³)", "Impact Toughness (kJ/m²)",
     "Elastic Modulus (MPa)", "Tensile Strength (MPa)", "Flexural Strength (MPa)", "Tensile Strain (%)",
     "Thermal Conductivity (W/m·K)", "Vicat Heat Resistance (°C)", "Initiation of Destruction Temp. (°C)",
-    "EMI Shielding Effectiveness (dB)", "Filler Geometry"
+    "EMI Shielding Effectiveness (dB)", "Filler Geometry", "Composite Density (g/cm³)", "Filler Volume Fraction (%)",
+    "Elastic Modulus matrix (MPa)", "Elastic Modulus filler (MPa)"
+    #22 colonne
 ]
 
-# List of composites, each as a row corresponding to the header
-# For values with uncertainty (e.g., "38.5±2.9"), only the central value is used.
+# Dati dei compositi
 composites = [
-    # 1. Conductive Polymer Composites
-    [
+    ["LDPE", "Basalt", 23.08, None, None, 0.925, 2.907, None, 11, 340, None, None, None, 145, 273, None, None,
+     "Particulate (≤140 μm)", 1.123, 8.7, 250, 70000],
+
+    #0.910–0.940 g/cm3 - ho preso i valori medi dei range per la densità
+    ["LDPE", "Basalt", 28.57, None, None, 0.925, 2.907, None, 39, 440, 9.88, 14.82, 250, None, 145, 273, None,
+     "Particulate (≤140 μm)", 1.183, 11.3, 250, 70000], # Flexural ≈ 1.5*Tensile
+
+    ["LDPE", "Basalt", 33.33, None, None, 0.925, 2.907, None, 21, 550, None, None, None, 145, 273, None, None,
+     "Particulate (≤140 μm)", 1.246, 14.2, 250, 70000],
+
+    ["HDPE", "Basalt", 23.08, None, None, 0.95, 2.907, None, 60, 1450, None, None, None, 119, 284, None, None,
+     "Particulate (≤140 μm)", 1.156, 8.5, 1100, 70000],
+
+    ["HDPE", "Basalt", 28.57, None, None, 0.95, 2.907, None, 80, 524, 9.88, 14.82, 250, None, 119, 284, None,
+     "Particulate (≤140 μm)", 1.230, 11.1, 1100, 70000],
+
+    ["HDPE", "Basalt", 33.33, None, None, 0.95, 2.907, None, 60, 1850, None, None, None, 119, 284, None, None,
+     "Particulate (≤140 μm)", 1.308, 14, 1100, 70000],
+
+    ["PP", "Basalt", 28.57, None, None, 0.925, 2.907, None, None, 1960, 21.50, 32.25, 4.33, None, None, None, None,
+     "Particulate (≤140 μm)", 1.183, 11.3, 1500, 70000],
+
+
+    ["Epoxy", "CNTs", 2, "Flax", None, 1.15, 1.35, 1.47, None, None, None, None, None, None, None, None, None, "Nanotubes", 1.151, 1.5],
+
+    ["Epoxy", "MWCNT + nano-diamond", 0.125, None, None, 1.15, None, None, None, None, None, None, None, None, None,
+     None, None, "Nanotubes + Nanoparticles", None, None],
+
+    ["LDPE", "CB + nano-clay", 20, "OPEFB", None, 0.925, None, None, None, None, None, None, None, None, None, None, None,
+     "Particulate + Nanoplatelets"],
+
+    ["Epoxy", "α-cellulosic micro-filler (Cocos nucifera)", 15, None, None, 1.15, 0.5, None, None, None, None, None, None,
+     None, 365, None, None, "Micro-powder", 1.073, 29.8],
+
+   # ["Concrete", "Biochar", 1, None, None, 2.41, 1.75, None, None, None, 0.219, None, None, None, None, None, None, "Micro-powder"],
+   # ["Concrete", "Biochar", 2, None, None, 2.41, 1.75, None, None, None, 0.1945, None, None, None, None, None, None,
+    # "Micro-powder"],
+
+    ["Polyurethane", "TMPS-treated silane", None, "Kenaf core", None, 1.15, None, 0.288, None, None, None, None, 365,
+     None, None, None, None, "Core-shell", None, None],
+
+    ["Polyurethane", "Silane (Untreated)", None, "Kenaf core", None, 1.15, 0.00134, 0.288, None, None, None, None, 350,
+     None, None, None, None, "Agglomerate", None, None],
+   # ["PP", None, None, "Wood flour (513 µm)", 40, 0.925, None, 0.205, None, None, 3200, 21.7, None, None, None, None,
+    # None, None],
+
+    ["Epoxy", None, None, "Sisal + Glass", None, 1.15, None, None, None, None, None, None, None, None, None, None, None, None, None, None],
+
+#CHECK: tutto corretto fino a questo punto
+
+[
         "Butyl rubber (IIR)",               # Polymer Matrix
         "Low-density polyethylene (PE)",    # Filler
         10,                               # Filler Concentration (wt%) as given
@@ -21,7 +72,7 @@ composites = [
         1.34, 0.925, None, None, None, None, None, None, None, None, None,
         60,                            # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
-    ],
+    ], #18
 [
         "Butyl rubber (IIR)",               # Polymer Matrix
         "Low-density polyethylene (PE)",    # Filler
@@ -37,7 +88,9 @@ composites = [
         "Chlorinated polyethylene (CPE)",   # Polymer Matrix
         "Ketjen carbon black (K-CB)",         # Filler
         30,                               # Filler Concentration (wt%)
-        None, None, 0.945, None, None, None, None, None, None, None, None, None, #non sprecificato il tipo di filler, quindi non posso vedere la densità
+        None, None, 0.945, None, None, None, None, None, None, None, None, None,
+        None,
+        #non sprecificato il tipo di filler, quindi non posso vedere la densità
         38.4,                             # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
     ],
@@ -45,7 +98,7 @@ composites = [
         "Phenolic resin",                   # Polymer Matrix
         "Carbon black (CB) nanoparticles",   # Filler
         None,                               # Filler Concentration (wt%) unspecified
-        None, None, 1.665, None, None, None, None, None, None, None, None, None,
+        None, None, 1.665, None, None, None, None, None, None, None, None, None, None,
         30,                            # EMI Shielding Effectiveness (dB)
         "nanoparticles"                     # Filler Geometry
     ],
@@ -53,7 +106,7 @@ composites = [
         "Phenolic resin",                   # Polymer Matrix
         "Carbon black (CB) nanoparticles",   # Filler
         None,                               # Filler Concentration (wt%) unspecified
-        None, None, 1.665, 1.95, None, None, None, None, None, None, None, None,
+        None, None, 1.665, 1.95, None, None, None, None, None, None, None, None, None,
         40,                            # EMI Shielding Effectiveness (dB)
         "nanoparticles"                     # Filler Geometry
     ],
@@ -62,7 +115,7 @@ composites = [
         "Epoxy",                           # Polymer Matrix
         "Graphene",                        # Filler
         15,                              # Filler Concentration (wt%)
-        None, None, 1.25, 2.267, None, None, None, None, None, None, None, None,
+        None, None, 1.25, 2.267, None, None, None, None, None, None, None, None, None,
         20,                           # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
     ],
@@ -70,7 +123,7 @@ composites = [
         "Epoxy",                           # Polymer Matrix
         "Graphene",                        # Filler
         15,                              # Filler Concentration (wt%)
-        None, None, 1.25, 2.267, None, None, None, None, None, None, None, None,
+        None, None, 1.25, 2.267, None, None, None, None, None, None, None, None, None,
         20,                           # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
     ],
@@ -78,7 +131,7 @@ composites = [
         "PMMA",                            # Polymer Matrix
         "Graphene",                        # Filler
         3.30,  # era dato in 1.8 vol%, convertito poi in wt%   # Filler Concentration (wt%)
-        None, None, 1.18, 2.267, None, None, None, None, None, None, None, None,
+        None, None, 1.18, 2.267, None, None, None, None, None, None, None, None, None,
         13,                           # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry
     ],
@@ -86,7 +139,7 @@ composites = [
         "PMMA",                            # Polymer Matrix
         "Graphene",                        # Filler
         3.30,  # era dato in 1.8 vol%, convertito poi in wt%   # Filler Concentration (wt%)
-        None, None, 1.18, 2.267, None, None, None, None, None, None, None, None,
+        None, None, 1.18, 2.267, None, None, None, None, None, None, None, None, None,
         19,                           # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry
     ],
@@ -94,7 +147,7 @@ composites = [
         "PEI (polyetherimide)",            # Polymer Matrix
         "Graphene@Fe₃O₄",                  # Filler
         10,                              # Filler Concentration (wt%)
-        None, None, 1.27, None, None, None, None, None, None, None, None, None,
+        None, None, 1.27, None, None, None, None, None, None, None, None, None, None,
         41.5,                            # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry
     ],
@@ -144,7 +197,7 @@ composites = [
         "Polyaniline (PANI)",                            # Polymer Matrix
         "MWCNTs",                          # Filler
         7,                               # Filler Concentration (wt%)
-        None, None, 1.245, None, None, None, None, None, None, None, None, None,
+        None, None, 1.245, None, None, None, None, None, None, None, None, None, None,
         27.5,                       # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
     ],
@@ -152,7 +205,7 @@ composites = [
         "Polyaniline (PANI)",                            # Polymer Matrix
         "MWCNTs",                          # Filler
         7,                               # Filler Concentration (wt%)
-        None, None, 1.245, 0.11, None, None, None, None, None, None, None, None, #ho considerato la densità apparente
+        None, None, 1.245, 0.11, None, None, None, None, None, None, None, None, None, #ho considerato la densità apparente
         39.2,                       # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
     ],
@@ -160,7 +213,7 @@ composites = [
         "PVDF",                            # Polymer Matrix
         "MWCNTs",                          # Filler
         15,                              # Filler Concentration (wt%)
-        None, None, 1.78, 0.11, None, None, None, None, None, None, None, None,
+        None, None, 1.78, 0.11, None, None, None, None, None, None, None, None, None,
         56,                              # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry (not provided)
     ],
@@ -168,7 +221,7 @@ composites = [
         "Epoxy",                           # Polymer Matrix
         "Reduced graphene oxide (rGO)-CF + Fe₃O₄ nanoparticles",  # Filler
         None,                              # Filler Concentration (wt%) not provided
-        None, None, 1.25, None, None, None, None, None, None, None, None, None,
+        None, None, 1.25, None, None, None, None, None, None, None, None, None, None,
         31.3,                       # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry not provided
     ],
@@ -176,7 +229,7 @@ composites = [
         "Epoxy",                           # Polymer Matrix
         "Reduced graphene oxide (rGO)-CF + Fe₃O₄ nanoparticles",  # Filler
         None,                              # Filler Concentration (wt%)
-        None, None, 1.25, None, None, None, None, None, None, None, None, None,
+        None, None, 1.25, None, None, None, None, None, None, None, None, None, None,
         51.1,                       # EMI Shielding Effectiveness (dB)
         None                                # Filler Geometry
     ],
@@ -186,7 +239,7 @@ composites = [
         "PDMS",                           # Polymer Matrix
         "MXene foam",                     # Filler
         None,
-        None, None, 1.03, None, None, None, None, None, None, None, None, None,
+        None, None, 1.03, None, None, None, None, None, None, None, None, None, None,
         70.5,                            # EMI Shielding Effectiveness (dB)
         "foam (2mm thickness)"                             # Filler Geometry, as indicated by "MXene foam"
     ],
@@ -195,7 +248,7 @@ composites = [
         "Synthetic Leather",                        # Polymer Matrix
         "Cu@Ag nanoflakes",                # Filler
         35.03,  #  5.17 vol% convertito in wt%   # Filler Concentration (wt%) field
-        None, None, 0.9, 8.9, None, None, None, None, None, None, None, None,
+        None, None, 0.9, 8.9, None, None, None, None, None, None, None, None, None,
         100,                            # EMI Shielding Effectiveness (dB)
         "nanoflakes"                       # Filler Geometry
     ],
@@ -214,7 +267,7 @@ composites = [
         "PANI",                           # Polymer Matrix
         "Li₀.₅Fe₂.₅₋ₓGdₓO₄ ferrite nanoparticles",  # Filler
         None,                             # Filler Concentration not provided
-        None, None, 1.245, None, None, None, None, None, None, None, None, None,
+        None, None, 1.245, None, None, None, None, None, None, None, None, None, None,
         41,                           # EMI Shielding Effectiveness (dB)
         "nanoparticles"                    # Filler Geometry
     ],
@@ -222,7 +275,7 @@ composites = [
         "PANI",  # Polymer Matrix
         "Li₀.₅Fe₂.₅₋ₓGdₓO₄ ferrite nanoparticles",  # Filler
         None,  # Filler Concentration not provided
-        None, None, 1.245, None, None, None, None, None, None, None, None, None,
+        None, None, 1.245, None, None, None, None, None, None, None, None, None, None,
         42,  # EMI Shielding Effectiveness (dB)
         "nanoparticles"  # Filler Geometry
     ],
@@ -231,7 +284,7 @@ composites = [
         "Ag-coated hollow PPy microspheres",  # Filler
         "10 Ag",                             # Filler Concentration (wt%)
         #NOTA: non è specificata la concentrazione del filler, solo la concentrazione di Ag sulle sfere
-        None, None, 1.005, None, None, None, None, None, None, None, None, None,
+        None, None, 1.005, None, None, None, None, None, None, None, None, None, None,
         23,                           # EMI Shielding Effectiveness (dB)
         "microspheres"                     # Filler Geometry
     ],
@@ -240,16 +293,19 @@ composites = [
         "Ag-coated hollow PPy microspheres",  # Filler
         "10 Ag",                             # Filler Concentration (wt%)
         #NOTA: non è specificata la concentrazione del filler, solo la concentrazione di Ag sulle sfere
-        None, None, 1.005, None, None, None, None, None, None, None, None, None,
+        None, None, 1.005, None, None, None, None, None, None, None, None, None, None,
         59,                           # EMI Shielding Effectiveness (dB)
         "microspheres"                     # Filler Geometry
     ]
+
 ]
 
-# Write the CSV file
-with open("composites.csv", "w", newline="", encoding="utf-8") as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(headers)  # write header
+# Scrivere i dati nel file CSV con le nuove colonne
+with open('spreadsheet_combo_newp_1.csv', mode='w', newline='') as file:
+    writer = csv.writer(file)
+    # scrive l'header
+    writer.writerow(headers)
+    # scrive i dati dei compositi
     writer.writerows(composites)
 
-print("CSV file 'composites.csv' generated successfully with", len(composites), "composites.")
+print("File CSV creato con successo con le nuove colonne vuote!")

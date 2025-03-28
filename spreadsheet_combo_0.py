@@ -40,7 +40,7 @@ composites = [
      None, "Core-shell"],
     ["Polyurethane", "Silane (Untreated)", None, "Kenaf core", None, 1.15, 0.00134, 0.288, None, None, None, None, 350,
      None, "Agglomerate"],
-    ["PP", None, 40, "Wood flour (513 µm)", None, 0.9075, None, 0.205, None, None, 3200, 21.7, None, None, None, None,
+    ["PP", None, None, "Wood flour (513 µm)", 40, 0.9075, None, 0.205, None, None, 3200, 21.7, None, None, None, None,
      None],
     ["Epoxy", None, None, "Sisal + Glass", None, 1.15, None, None, None, None, None, None, None, None, None, None]
 ]
