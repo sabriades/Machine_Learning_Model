@@ -1,35 +1,36 @@
-Polymer Matrix,Filler,Filler Concentration (wt%),Fiber,Fiber Concentration (wt%),Matrix Density (g/cm³),Filler Density (g/cm³),Fiber Density (g/cm³),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry,Composite Density (g/cm³),Filler Volume Fraction (%),Elastic Modulus matrix (MPa),Elastic Modulus filler (MPa)
-LDPE,Basalt,23.08,,,0.925,2.907,,11,340,,,,145,273,,,Particulate (≤140 μm),1.123,8.7,250,70000
-LDPE,Basalt,28.57,,,0.925,2.907,,39,440,9.88,14.82,250,,145,273,,Particulate (≤140 μm),1.183,11.3,250,70000
-LDPE,Basalt,33.33,,,0.925,2.907,,21,550,,,,145,273,,,Particulate (≤140 μm),1.246,14.2,250,70000
-HDPE,Basalt,23.08,,,0.95,2.907,,60,1450,,,,119,284,,,Particulate (≤140 μm),1.156,8.5,1100,70000
-HDPE,Basalt,28.57,,,0.95,2.907,,80,524,9.88,14.82,250,,119,284,,Particulate (≤140 μm),1.23,11.1,1100,70000
-HDPE,Basalt,33.33,,,0.95,2.907,,60,1850,,,,119,284,,,Particulate (≤140 μm),1.308,14,1100,70000
-PP,Basalt,28.57,,,0.925,2.907,,,1960,21.5,32.25,4.33,,,,,Particulate (≤140 μm),1.183,11.3,1500,70000
-Epoxy,CNTs,2,Flax,,1.15,1.35,1.47,,,,,,,,,,Nanotubes,1.151,1.5
-Epoxy,MWCNT + nano-diamond,0.125,,,1.15,,,,,,,,,,,,Nanotubes + Nanoparticles,,
-LDPE,CB + nano-clay,20,OPEFB,,0.925,,,,,,,,,,,,Particulate + Nanoplatelets
-Epoxy,α-cellulosic micro-filler (Cocos nucifera),15,,,1.15,0.5,,,,,,,,365,,,Micro-powder,1.073,29.8
-Polyurethane,TMPS-treated silane,,Kenaf core,,1.15,,0.288,,,,,365,,,,,Core-shell,,
-Polyurethane,Silane (Untreated),,Kenaf core,,1.15,0.00134,0.288,,,,,350,,,,,Agglomerate,,
+Polymer Matrix,Filler,Filler Concentration (wt%),Fiber,Fiber Concentration (wt%),Matrix Density (g/cm³),Filler Density (g/cm³),Fiber Density (g/cm³),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry,Composite Density (g/cm³),Filler Volume Fraction (%),Elastic Modulus matrix (MPa),Elastic Modulus filler (MPa),Fiber Volume Fraction (%),Friction Coefficient,Tensile Modulus (MPa),Impact Strength (kJ/m²),Fiber Geometry
+LDPE,Basalt,23.08,,,0.925,2.907,,11,340,,,,145,273,,,Particulate (≤140 μm),1.123,8.7,250,70000,
+LDPE,Basalt,28.57,,,0.925,2.907,,39,440,9.88,14.82,250,,145,273,,Particulate (≤140 μm),1.183,11.3,250,70000,,0.15
+LDPE,Basalt,33.33,,,0.925,2.907,,21,550,,,,145,273,,,Particulate (≤140 μm),1.246,14.2,250,70000,
+HDPE,Basalt,23.08,,,0.95,2.907,,60,1450,,,,119,284,,,Particulate (≤140 μm),1.156,8.5,1100,70000,
+HDPE,Basalt,28.57,,,0.95,2.907,,80,524,9.88,14.82,250,,119,284,,Particulate (≤140 μm),1.23,11.1,1100,70000,,0.18
+HDPE,Basalt,33.33,,,0.95,2.907,,60,1850,,,,119,284,,,Particulate (≤140 μm),1.308,14,1100,70000,
+PP,Basalt,28.57,,,0.925,2.907,,,1970,21.5,32.25,4.33,,,,,Particulate (≤140 μm),1.183,11.3,1500,70000,,,
+Epoxy,CNTs,2,Flax,,1.15,1.35,1.47,,,,,,,,,,Nanotubes,1.151,1.5,,,
+Epoxy,MWCNT + nano-diamond,0.125,,,1.15,,,,,,,,,,,,Nanotubes + Nanoparticles,,,,,
+LDPE,CB + nano-clay,20,OPEFB,,0.925,,,,,,,,,,,,Particulate + Nanoplatelets,,,,,
+Epoxy,α-cellulosic micro-filler (Cocos nucifera),15,,,1.15,0.5,,,,,,,,365,,,Micro-powder,1.073,29.8,,,
+Polyurethane,TMPS-treated silane,,Kenaf core,,1.15,,0.288,,,,,365,,,,,Core-shell,,,,,
+Polyurethane,Silane (Untreated),,Kenaf core,,1.15,0.00134,0.288,,,,,350,,,,,Agglomerate,,,,,
+PP,,,Wood flour (513 µm),40,0.925,,1.5,,3200,21.7,32.5,,,,,,,,,,,,,,4.5,Particulate
 Epoxy,,,Sisal + Glass,,1.15,,,,,,,,,,,,,,
-Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,60,
-Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,50,
-Chlorinated polyethylene (CPE),Ketjen carbon black (K-CB),30,,,0.945,,,,,,,,,,,38.4,
+Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,60,,1.25,13.8,,
+Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,50,,1.25,13.8,,
+Chlorinated polyethylene (CPE),Ketjen carbon black (K-CB),30,,,0.945,1.95,,,,,,,,,,38.4,,1.16,17.2,,
 Phenolic resin,Carbon black (CB) nanoparticles,,,,1.665,,,,,,,,,,,30,nanoparticles
 Phenolic resin,Carbon black (CB) nanoparticles,,,,1.665,1.95,,,,,,,,,,40,nanoparticles
-Epoxy,Graphene,15,,,1.25,2.267,,,,,,,,,,20,
-Epoxy,Graphene,15,,,1.25,2.267,,,,,,,,,,20,
-PMMA,Graphene,3.3,,,1.18,2.267,,,,,,,,,,13,
-PMMA,Graphene,3.3,,,1.18,2.267,,,,,,,,,,19,
-PEI (polyetherimide),Graphene@Fe₃O₄,10,,,1.27,,,,,,,,,,,41.5,
-"Nylon 6,6",,,Long carbon fibers,30,1.14,,1.875,,,,,,,,,45,
-"Nylon 6,6",,,Long carbon fibers,30,1.14,,1.875,,,,,,,,,75,
-Polysulfone (PSU),,,Carbon nanofibers (CNF),10,1.24,,1.125,,,,,,,,,19,
-Polysulfone (PSU),,,Carbon nanofibers (CNF),10,1.24,,1.125,,,,,,,,,45,
-Polyaniline (PANI),MWCNTs,7,,,1.245,,,,,,,,,,,27.5,
-Polyaniline (PANI),MWCNTs,7,,,1.245,0.11,,,,,,,,,,39.2,
-PVDF,MWCNTs,15,,,1.78,0.11,,,,,,,,,,56,
+Epoxy,Graphene,15,,,1.25,2.267,,,,,,,,,,20,,1.36,8.9,,
+Epoxy,Graphene,15,,,1.25,2.267,,,,,,,,,,21,,1.36,8.9,,
+PMMA,Graphene,3.3,,,1.18,2.267,,,,,,,,,,13,,1.19,1.7,,
+PMMA,Graphene,3.3,,,1.18,2.267,,,,,,,,,,19,,1.19,1.7,,
+PEI (polyetherimide),Graphene@Fe₃O₄,10,,,1.27,,,,,,,,,,,41.5,,,,,
+"Nylon 6,6",,,Long carbon fibers,30,1.14,,1.875,,,,,,,,,45,,1.29,,,,20.8
+"Nylon 6,6",,,Long carbon fibers,30,1.14,,1.875,,,,,,,,,75,,1.29,,,,20.8
+Polysulfone (PSU),,,Carbon nanofibers (CNF),10,1.24,,1.125,,,,,,,,,19,,1.23,,,,10.9
+Polysulfone (PSU),,,Carbon nanofibers (CNF),10,1.24,,1.125,,,,,,,,,45,,1.23,,,,10.9
+Polyaniline (PANI),MWCNTs,7,,,1.245,,,,,,,,,,,27.5,,,,,,
+Polyaniline (PANI),MWCNTs,7,,,1.245,0.11,,,,,,,,,,39.2,,,,,,
+PVDF,MWCNTs,15,,,1.78,0.11,,,,,,,,,,56,,0.19,74.1,,,
 Epoxy,Reduced graphene oxide (rGO)-CF + Fe₃O₄ nanoparticles,,,,1.25,,,,,,,,,,,31.3,
 Epoxy,Reduced graphene oxide (rGO)-CF + Fe₃O₄ nanoparticles,,,,1.25,,,,,,,,,,,51.1,
 PDMS,MXene foam,,,,1.03,,,,,,,,,,,70.5,foam (2mm thickness)
