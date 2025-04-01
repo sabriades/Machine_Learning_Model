@@ -392,10 +392,54 @@ composites = [
         None, None, 1.005, None, None, None, None, None, None, None, None, None, None,
         59,                           # EMI Shielding Effectiveness (dB)
         "microspheres"                     # Filler Geometry
-    ]
+    ],
 #CHECK: i dati estratti sono tutti corretti. anche il calcolo di dati aggiuntivi
     # (oltre a quelli estratti nei 3 articoli) è corretto. vorrei calcolare altri dati,
     # ma la priorità è concentrarsi su compositi PEI (finora ce n'è solo uno) 30/03
+    [
+        "Polyetherimide (PEI)", "Fe₃O₄ microplate (FMP)", 4.76, None, None,
+        1.27, #matrix density
+        5.18, #filler density
+        None, None,
+        3104,  # Elastic Modulus (MPa) tramite Halpin-Tsai per filler piastriformi (per tutti i compositi successivi PEI MATRIX)
+        None, None, None, None, None, None,
+        None, "Microplate",
+        1.29, #composite density
+        1.2, #filler volume fraction
+        3000, #elastic modulus matrix
+        200000, #elastic modulur filler
+        None, None, None, None, None
+    ],
+    [
+        "Polyetherimide (PEI)", "Fe₃O₄ microplate (FMP)", 7.41, None, None,
+        1.27, 5.18, None, None,
+        3275,  # Elastic Modulus (MPa) - Calcolato
+        None, None, None, None, None, None,
+        None, "Microplate", 1.34, 1.9, 3000, 200000, None, None, None, None, None
+    ],
+    [
+        "Polyetherimide (PEI)", "Fe₃O₄ microplate (FMP)", 9.09, None, None,
+        1.27, 5.18, None, None,
+        3412,  # Elastic Modulus (MPa) - Calcolato
+        None, None, None, None, None, None,
+        None, "Microplate", 1.40, 2.3, 3000, 200000, None, None, None, None, None
+    ],
+    [
+        "Polyetherimide (PEI)", "Fe₃O₄ microplate (FMP)", 13.04, None, None,
+        1.27, 5.18, None, None,
+        3798,  # Elastic Modulus (MPa) - Calcolato
+        None, None, None, None, None, None,
+        None, "Microplate", 1.52, 3.4, 3000, 200000, None, None, None, None, None
+    ],
+    [
+        "Polyetherimide (PEI)", "Fe₃O₄ microplate (FMP)", 16.67, None, None,
+        1.27, 5.18, None, None,
+        4326,  # Elastic Modulus (MPa) - Calcolato
+        None, None, None, None, None, None,
+        None, "Microplate", 1.65, 4.5, 3000, 200000, None, None, None, None, None
+    ]
+
+#anche la quarta tabella con tutti i PEI è stata verificata
 ]
 
 # Scrivere i dati nel file CSV con le nuove colonne

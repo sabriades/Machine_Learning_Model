@@ -12,7 +12,7 @@ LDPE,CB + nano-clay,20,OPEFB,,0.925,,,,,,,,,,,,Particulate + Nanoplatelets,,,,,
 Epoxy,α-cellulosic micro-filler (Cocos nucifera),15,,,1.15,0.5,,,,,,,,365,,,Micro-powder,1.073,29.8,,,
 Polyurethane,TMPS-treated silane,,Kenaf core,,1.15,,0.288,,,,,365,,,,,Core-shell,,,,,
 Polyurethane,Silane (Untreated),,Kenaf core,,1.15,0.00134,0.288,,,,,350,,,,,Agglomerate,,,,,
-PP,,,Wood flour (513 µm),40,0.925,,1.5,,3200,21.7,32.5,,,,,,,,,,,,,,4.5,Particulate
+PP,,,Wood flour (513 µm),40,0.925,,1.5,,3200,21.7,32.5,,,,,,,,,,,,,3200,4.5,Particulate
 Epoxy,,,Sisal + Glass,,1.15,,,,,,,,,,,,,,
 Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,60,,1.25,13.8,,
 Butyl rubber (IIR),Low-density polyethylene (PE),10,,,1.34,0.925,,,,,,,,,,50,,1.25,13.8,,
@@ -40,3 +40,8 @@ PANI,Li₀.₅Fe₂.₅₋ₓGdₓO₄ ferrite nanoparticles,,,,1.245,,,,,,,,,,,
 PANI,Li₀.₅Fe₂.₅₋ₓGdₓO₄ ferrite nanoparticles,,,,1.245,,,,,,,,,,,42,nanoparticles
 Polystyrene (PS),Ag-coated hollow PPy microspheres,10 Ag,,,1.005,,,,,,,,,,,23,microspheres
 Polystyrene (PS),Ag-coated hollow PPy microspheres,10 Ag,,,1.005,,,,,,,,,,,59,microspheres
+Polyetherimide (PEI),Fe₃O₄ microplate (FMP),4.76,,,1.27,5.18,,,3104,,,,,,,,Microplate,1.29,1.2,3000,200000,,,,,
+Polyetherimide (PEI),Fe₃O₄ microplate (FMP),7.41,,,1.27,5.18,,,3275,,,,,,,,Microplate,1.34,1.9,3000,200000,,,,,
+Polyetherimide (PEI),Fe₃O₄ microplate (FMP),9.09,,,1.27,5.18,,,3412,,,,,,,,Microplate,1.4,2.3,3000,200000,,,,,
+Polyetherimide (PEI),Fe₃O₄ microplate (FMP),13.04,,,1.27,5.18,,,3798,,,,,,,,Microplate,1.52,3.4,3000,200000,,,,,
+Polyetherimide (PEI),Fe₃O₄ microplate (FMP),16.67,,,1.27,5.18,,,4326,,,,,,,,Microplate,1.65,4.5,3000,200000,,,,,
