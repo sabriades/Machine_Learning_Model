@@ -40,6 +40,22 @@ contenuto=[
     ("Oxygen Index (%)", "Indice di ossigeno", "Funzionale", "Comportamento al fuoco", "Quantità minima di ossigeno necessaria per mantenere la combustione"),
     ("Rockwell Hardness (M)", "Durezza Rockwell (scala M)", "Meccanica", "", "Resistenza alla penetrazione: misura della durezza superficiale"),
     ("Mode II Interlaminar Fracture Toughness (kJ/m²)", "Tenacità a frattura interlaminare di modo II (kJ/m²)", "Meccanica", "", "Resistenza alla propagazione di una frattura tra strati sotto sollecitazione di taglio"),
+ ("Hardness (Shore D)", "Durezza (Shore D)", "Meccanica", "", "Misura della durezza superficiale secondo la scala Shore D, usata per materiali rigidi"),
+    ("Rebound Resilience (%)", "Resilienza al rimbalzo (%)", "Meccanica", "", "Capacità del materiale di riprendere la forma dopo un impatto (misura elastica)"),
+    ("Brittleness (10^10/%·Pa)", "Fragilità (10^10/%·Pa)", "Meccanica", "", "Indice della facilità con cui un materiale si rompe sotto stress"),
+    ("Melting Temperature (°C)", "Temperatura di fusione (°C)", "Funzionale", "Termica", "Temperatura alla quale il materiale passa da solido a liquido"),
+    ("Crystallization Temperature (°C)", "Temperatura di cristallizzazione (°C)", "Funzionale", "Termica", "Temperatura alla quale un polimero inizia a cristallizzare"),
+    ("Onset Crystallization Temperature (°C)", "Temperatura iniziale di cristallizzazione (°C)", "Funzionale", "Termica", "Punto iniziale della transizione amorfa → cristallina"),
+    ("Melting Enthalpy (J/g)", "Entalpia di fusione (J/g)", "Funzionale", "Termica", "Energia necessaria per fondere una certa massa del materiale"),
+    ("Crystallinity Degree (%)", "Grado di cristallinità (%)", "Funzionale", "Strutturale", "Percentuale di fase cristallina nel materiale"),
+    ("Storage Modulus E′ at 25°C (MPa)", "Modulo di immagazzinamento E′ a 25°C", "Meccanica", "Dinamica", "Parte elastica della risposta viscoelastica a 25°C"),
+    ("Loss Modulus E″ at 25°C (MPa)", "Modulo di perdita E″ a 25°C", "Meccanica", "Dinamica", "Parte viscosa della risposta viscoelastica a 25°C"),
+    ("tan δ at 25°C", "tan δ a 25°C", "Meccanica", "Dinamica", "Rapporto tra modulo di perdita e modulo di immagazzinamento (dissipazione)"),
+    ("Melt Flow Index (g/10 min)", "Indice di fluidità a caldo (g/10 min)", "Funzionale", "Lavorabilità", "Quantità di materiale fuso che fluisce in 10 minuti"),
+    ("Complex Viscosity (Trend)", "Viscosità complessa (andamento)", "Funzionale", "Reologica", "Comportamento della viscosità del materiale sotto sforzo oscillante"),
+    ("Porosity (%)", "Porosità (%)", "Funzionale", "Strutturale", "Percentuale di vuoti presenti all’interno del materiale"),
+    ("Adhesion Factor", "Fattore di adesione", "Funzionale", "Interfaccia", "Capacità del materiale di aderire ad altri materiali"),
+
 ]
 
 # Scrivere i dati nel file CSV con le nuove colonne

@@ -10,7 +10,13 @@ headers = [
     "Elastic Modulus matrix (MPa)", "Elastic Modulus filler (MPa)", "Fiber Volume Fraction (%)", "Friction Coefficient",
     "Tensile Modulus (MPa)", "Impact Strength (kJ/m²)", "Fiber Geometry",
     "Offset Yield Stress (MPa)", "Fatigue Durability (cycles)", "Glass Transition Temperature (°C)",
-    "Linear Expansion Coefficient (1/°C)", "Oxygen Index (%)", "Rockwell Hardness (M)", "Mode II Interlaminar Fracture Toughness (kJ/m²)"
+    "Linear Expansion Coefficient (1/°C)", "Oxygen Index (%)", "Rockwell Hardness (M)", "Mode II Interlaminar Fracture Toughness (kJ/m²)",
+
+"Hardness (Shore D)", "Rebound Resilience (%)", "Brittleness (10^10/%·Pa)",
+    "Melting Temperature (°C)", "Crystallization Temperature (°C)", "Onset Crystallization Temperature (°C)",
+    "Melting Enthalpy (J/g)", "Crystallinity Degree (%)",
+    "Storage Modulus E′ at 25°C (MPa)", "Loss Modulus E″ at 25°C (MPa)", "tan δ at 25°C",
+    "Melt Flow Index (g/10 min)", "Complex Viscosity (Trend)", "Porosity (%)", "Adhesion Factor"
 
     #quante colonne?
 ]
@@ -661,12 +667,104 @@ composites = [
     None,                           # Oxygen Index (%)
     None,                           # Rockwell Hardness (M)
     None                            # Mode II Interlaminar Fracture Toughness (kJ/m²)
-] #NOTA:. ho usato i valori tipici di densità e moduli elastici per arricchire il dataset
+], #NOTA:. ho usato i valori tipici di densità e moduli elastici per arricchire il dataset
+
+#ARTICOLO 7 - 7 APRILE
+    # PE/1Al
+[
+    "HDPE", "Aluminum", 1, None, None,
+    0.954, 2.6, None, None,
+    1162, 24.8, None, 25.6,
+    None, None, None,
+    None, "Micrometric particles (~65 µm)", None, None,
+    1220, None, None, None,
+    1162, None, None,
+    None, None, None,
+    None, None, None, None,
+
+    56.2, 18.0, 0.273,
+    132.3, 112.4, 115.8,
+    207.1, 71.3,
+    1433, 81, 0.0568,
+    30, "Slight increase at 1–2 wt%", 1.20, -0.0436
+],
+    # PE/2Al
+    [
+        "HDPE", "Aluminum", 2, None, None,
+        0.954, 2.6, None, None,
+        1126, 25.2, None, 21.6,
+        None, None, None,
+        None, "Micrometric particles (~65 µm)", None, None,
+        1220, None, None, None,
+        1126, None, None,
+        None, None, None,
+        None, None, None, None,
+
+        56.5, 17.8, 0.358,
+        132.4, 112.3, 116.0,
+        194.6, 67.6,
+        1296, 72, 0.0557,
+        30, "Slight increase at 1–2 wt%", 1.83, -0.0580
+    ],
+    # PE/5Al
+    [
+        "HDPE", "Aluminum", 5, None, None,
+        0.954, 2.6, None, None,
+        1149, 24.2, None, 17.5,
+        None, None, None,
+        None, "Micrometric particles (~65 µm)", None, None,
+        1220, None, None, None,
+        1149, None, None,
+        None, None, None,
+        None, None, None, None,
+
+        57.0, 17.0, 0.413,
+        132.3, 112.5, 116.1,
+        196.0, 70.3,
+        1388, 78, 0.0564,
+        30, "Minimal change for >2 wt%", 4.40, -0.0404
+    ],
+    # PE/10Al
+    [
+        "HDPE", "Aluminum", 10, None, None,
+        0.954, 2.6, None, None,
+        1225, 23.6, None, 10.6,
+        None, None, None,
+        None, "Micrometric particles (~65 µm)", None, None,
+        1220, None, None, None,
+        1225, None, None,
+        None, None, None,
+        None, None, None, None,
+
+        57.7, 16.4, 0.534,
+        132.4, 112.4, 115.9,
+        188.7, 71.4,
+        1766, 97, 0.0550,
+        30, "Minimal change for >2 wt%", 9.52, -0.0359
+    ],
+    # PE/20Al
+    [
+        "HDPE", "Aluminum", 20, None, None,
+        0.954, 2.6, None, None,
+        1422, 21.3, None, 7.9,
+        None, None, None,
+        None, "Micrometric particles (~65 µm)", None, None,
+        1220, None, None, None,
+        1422, None, None,
+        None, None, None,
+        None, None, None, None,
+
+        59.6, 15.1, 0.682,
+        131.7, 112.3, 116.1,
+        166.2, 70.8,
+        1853, 105, 0.0567,
+        30, "Minimal change for >2 wt%", 16.37, 0.0352
+    ]
 
 ]
 
 # Scrivere i dati nel file CSV con le nuove colonne
-with open('spreadsheet_combo_newp3.csv', mode='w', newline='') as file:
+with open('spreadsheet_combo_newp4.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     # scrive l'header
     writer.writerow(headers)
