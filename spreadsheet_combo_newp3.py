@@ -10,7 +10,7 @@ headers = [
     "Elastic Modulus matrix (MPa)", "Elastic Modulus filler (MPa)", "Fiber Volume Fraction (%)", "Friction Coefficient",
     "Tensile Modulus (MPa)", "Impact Strength (kJ/m²)", "Fiber Geometry",
     "Offset Yield Stress (MPa)", "Fatigue Durability (cycles)", "Glass Transition Temperature (°C)",
-    "Linear Expansion Coefficient (1/°C)", "Oxygen Index (%)", "Rockwell Hardness (M)"
+    "Linear Expansion Coefficient (1/°C)", "Oxygen Index (%)", "Rockwell Hardness (M)", "Mode II Interlaminar Fracture Toughness (kJ/m²)"
 
     #quante colonne?
 ]
@@ -507,8 +507,123 @@ composites = [
         3400, 200000, None, None, 7100, None,
         "AR = 200, L = 2000 μm",
         108.0, 3400, 217, 5.2e-5, 47, 109
-    ]
+    ],
 
+#NUOVO ARTICOLO 5: verificare che nella colonna della impact toughness ci sia
+    # effettivamente la impact toughness - verificare
+    #ho ancora il dubbio riguardo come chiamata l'ultima colonna
+    [
+        "PEEK",
+        None,  # Filler assente (solo fibre)
+        None,  # Filler Concentration (wt%) assente
+        "Teijin TENAX E HTA 40",
+        None,  # Fiber Concentration (wt%) non specificata (solo 4.5% sizing sulla fibra)
+        None,  # Matrix Density non riportata
+        None,  # Filler Density irrilevante
+        None,  # Fiber Density non riportata
+        None,  # Impact Toughness
+        69000,  # Elastic Modulus (69 GPa → 69000 MPa)
+        690,  # Tensile Strength (Tabella 2)
+        None,  # Flexural Strength non misurata
+        5.8,  # Tensile Strain (±45°, Tabella 2)
+        None,  # Thermal Conductivity non misurata
+        None,  # Vicat Heat Resistance non riportata
+        None,  # Initiation of Destruction Temp
+        None,  # EMI Shielding non misurato
+        None,  # Filler Geometry assente
+        None,  # Composite Density non riportata
+        None,  # Filler Volume Fraction assente
+        None,  # Elastic Modulus matrix
+        None,  # Elastic Modulus filler
+        53,  # Fiber Volume Fraction (Tabella 1)
+        None,  # Friction Coefficient
+        20000,  # Tensile Modulus (±45°, 20 GPa → 20000 MPa)
+       None,  # Impact Strength
+        "Woven fabric (5H satin, 7.0 µm, 375 g/m²)",  # Dettagli fibra (Sezione 2.1)
+        None,  # Offset Yield Stress
+        None,  # Fatigue Durability
+        143,  # Glass Transition Temperature PEEK (dall'introduzione)
+        None,  # Linear Expansion Coefficient
+        None,  # Oxygen Index
+        None,  # Rockwell Hardness
+1.34 #valore calcolato
+    ],
+    [
+        "PEI",
+        None,
+        None,
+        "Teijin TENAX E HTA 40",
+        None,
+        None,
+        None,
+        None,
+        None,
+        69000,  # Elastic Modulus (69 GPa → 69000 MPa)
+        700,  # Tensile Strength (Tabella 2)
+        None,
+        3.1,  # Tensile Strain (±45°)
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        52,  # Fiber Volume Fraction
+        None,
+        18000,  # Tensile Modulus (±45°, 18 GPa → 18000 MPa)
+        None,
+        "Woven fabric (5H satin, 7.0 µm, 375 g/m²)",
+        None,
+        None,
+        217,  # Glass Transition Temperature PEI
+        None,
+        None,
+        None,
+1.53 #valore calcolato
+    ],
+    [
+        "PEEK + PEI (30/70 vol%)",
+        None,
+        None,
+        "Teijin TENAX E HTA 40",
+        None,
+        None,
+        None,
+        None,
+        None,
+        67000,  # Elastic Modulus (67 GPa → 67000 MPa)
+        672,  # Tensile Strength (Tabella 2)
+        None,
+        4.6,  # Tensile Strain (±45°): deformazione a rottura quando il carico è applicato
+        # a 45° rispetto alle fibre
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        45,  # Fiber Volume Fraction
+        None,
+        17000,  # Tensile Modulus (±45°, 17 GPa → 17000 MPa)
+        None,
+        "Woven fabric (5H satin, 7.0 µm, 375 g/m²)",
+        None,
+        None,
+        None,  # Glass Transition Temperature
+        None,
+        None,
+        None,
+1.71 #valore calcolato
+    ]
+# ARTICOLO 6 - 7 APRILE
+
+    
 
 ]
 
@@ -520,4 +635,4 @@ with open('spreadsheet_combo_newp3.csv', mode='w', newline='') as file:
     # scrive i dati dei compositi
     writer.writerows(composites)
 
-print("File CSV creato con successo con le nuove colonne vuote!")
+print("file CSV creato!")

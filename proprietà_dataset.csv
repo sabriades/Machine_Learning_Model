@@ -1,0 +1,34 @@
+Nome,Traduzione,Tipo di Proprietà,Sottotipo,Spiegazione
+Polymer Matrix,Matrice polimerica,,,Il tipo di polimero base del composito
+Filler,Riempitivo,,,Il tipo di materiale di riempimento usato nel composito
+Filler Concentration (wt%),Concentrazione del riempitivo (peso %),,,Percentuale in peso del filler nel materiale
+Fiber,Fibra,,,Tipo di fibra usata nel composito
+Fiber Concentration (wt%),Concentrazione delle fibre (peso %),,,Percentuale in peso della fibra nel materiale
+Matrix Density (g/cm³),Densità della matrice,Fisica,,Massa per unità di volume del polimero base
+Filler Density (g/cm³),Densità del riempitivo,Fisica,,Massa per volume del materiale riempitivo
+Fiber Density (g/cm³),Densità della fibra,Fisica,,Massa per volume del materiale fibroso
+Impact Toughness (kJ/m²),Tenacità all’impatto,Meccanica,,Capacità del materiale di assorbire energia durante un impatto.
+Elastic Modulus (MPa),Modulo elastico,Meccanica,,Rigidità del materiale: resistenza alla deformazione elastica.
+Tensile Strength (MPa),Resistenza a trazione,Meccanica,,Sforzo massimo sopportabile in trazione prima della rottura.
+Flexural Strength (MPa),Resistenza a flessione,Meccanica,,Resistenza alla rottura sotto carico flessionale.
+Tensile Strain (%),Deformazione a trazione (%),Meccanica,,Allungamento percentuale del materiale sotto trazione.
+Thermal Conductivity (W/m·K),Conducibilità termica,Funzionale,Termica,Capacità di condurre calore.
+Vicat Heat Resistance (°C),Resistenza termica Vicat,Funzionale,Termica,Temperatura alla quale il materiale inizia a deformarsi sotto carico.
+Initiation of Destruction Temp. (°C),Temperatura d’inizio distruzione,Funzionale,Termica,Temperatura alla quale comincia la decomposizione
+EMI Shielding Effectiveness (dB),Efficienza schermatura EMI (dB),Funzionale,Elettrica,Capacità di bloccare interferenze elettromagnetiche
+Filler Geometry,Geometria del riempitivo,,,"La forma fisica del filler (sferico, fibroso, ecc)"
+Composite Density (g/cm³),Densità del composito,,Fisica,Densità del materiale composito completo
+Filler Volume Fraction (%),Frazione volumica del riempitivo (%),Altro,,Percentuale in volume del filler
+Elastic Modulus matrix (MPa),Modulo elastico della matrice,Meccanica,,Rigidità della matrice polimerica
+Elastic Modulus filler (MPa),Modulo elastico del riempitivo,Meccanica,,Rigidità del materiale di riempimento
+Fiber Volume Fraction (%),Frazione volumica delle fibre (%),,,Percentuale in volume della fibra nel composito
+Friction Coefficient,Coefficiente di attrito,Meccanica,,Resistenza al movimento relativo tra superfici a contatto
+Tensile Modulus (MPa),Modulo a trazione,Meccanica,,Rapporto sforzo/deformazione in trazione
+Impact Strength (kJ/m²),Resistenza all’impatto,Meccanica,,Energia che il materiale può assorbire prima di fratturarsi
+Fiber Geometry,Geometria della fibra,,,"La forma della fibra (continua, corta, ecc.)"
+Offset Yield Stress (MPa),Tensione di snervamento (Offset),Meccanica,,Sforzo al quale il materiale inizia a deformarsi plasticamente
+Fatigue Durability (cycles),Durabilità a fatica (cicli),Meccanica,,Numero di cicli di carico prima della rottura per fatica
+Glass Transition Temperature (°C),Temperatura di transizione vetrosa,Funzionale,Termica,Temperatura in cui il materiale passa da rigido a gommoso
+Linear Expansion Coefficient (1/°C),Coefficiente di espansione termica lineare,Funzionale,Termica,Tendenza ad espandersi con la temperatura
+Oxygen Index (%),Indice di ossigeno,Funzionale,Comportamento al fuoco,Quantità minima di ossigeno necessaria per mantenere la combustione
+Rockwell Hardness (M),Durezza Rockwell (scala M),Meccanica,,Resistenza alla penetrazione: misura della durezza superficiale
