@@ -634,16 +634,16 @@ composites = [
 
 [
     "PEI",                          # Polymer Matrix
-    "Carbon fibers",                # Filler
-    58,                             # Filler Concentration (wt%)
+    None,                # Filler
+    None,                             # Filler Concentration (wt%)
     "Carbon fibers",                # Fiber
     58,                             # Fiber Concentration (wt%)
     None,                           # Matrix Density (g/cm³)
-    1.75,                           # Filler Density (g/cm³) [typical for carbon fibers]
+    1.75,                           # Filler Density (g/cm³) [valore tipico per le carbon fibers]
     1.75,                           # Fiber Density (g/cm³) [same as filler]
     None,                           # Impact Toughness (kJ/m²)
-    None,                           # Elastic Modulus (MPa) -> not explicitly reported
-    None,                           # Tensile Strength (MPa) -> not reported
+    None,                           # Elastic Modulus (MPa)
+    None,                           # Tensile Strength (MPa)
     998,                            # Flexural Strength (MPa) (unaged)
     None,                           # Tensile Strain (%)
     None,                           # Thermal Conductivity (W/m·K)
@@ -653,16 +653,16 @@ composites = [
     "Continuous fibers (5H satin weave, 285 g/m²)",  # Filler Geometry
     1.51,                           # Composite Density (g/cm³) [calculated from 51 vol% fibers]
     51,                             # Filler Volume Fraction (%)
-    3000,                           # Elastic Modulus matrix (MPa) [typical for PEI]
-    230000,                         # Elastic Modulus filler (MPa) [typical for carbon fibers]
+    3000,                           # Elastic Modulus matrix (MPa) [valore tipico per il  PEI]
+    230000,                         # Elastic Modulus filler (MPa) [valore tipico per le carbon fibers]
     51,                             # Fiber Volume Fraction (%)
     None,                           # Friction Coefficient
     None,                           # Tensile Modulus (MPa)
     None,                           # Impact Strength (kJ/m²)
     "5H satin weave, 285 g/m²",     # Fiber Geometry
     None,                           # Offset Yield Stress (MPa)
-    None,                           # Fatigue Durability (cycles) -> only model parameters available
-    183,                            # Glass Transition Temperature (°C) (in situ PEI)
+    None,                           # Fatigue Durability (cycles)
+    183,                            # Glass Transition Temperature (°C) (nel PEI)
     None,                           # Linear Expansion Coefficient (1/°C)
     None,                           # Oxygen Index (%)
     None,                           # Rockwell Hardness (M)
@@ -760,6 +760,8 @@ composites = [
         1853, 105, 0.0567,
         30, "Minimal change for >2 wt%", 16.37, 0.0352
     ]
+
+    #per ora 61 righe in tabella
 
 ]
 
