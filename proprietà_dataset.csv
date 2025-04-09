@@ -43,8 +43,27 @@ Melting Enthalpy (J/g),Entalpia di fusione (J/g),Funzionale,Termica,Energia nece
 Crystallinity Degree (%),Grado di cristallinità (%),Funzionale,Strutturale,Percentuale di fase cristallina nel materiale
 Storage Modulus E′ at 25°C (MPa),Modulo di immagazzinamento E′ a 25°C,Meccanica,Dinamica,Parte elastica della risposta viscoelastica a 25°C
 Loss Modulus E″ at 25°C (MPa),Modulo di perdita E″ a 25°C,Meccanica,Dinamica,Parte viscosa della risposta viscoelastica a 25°C
-tan δ at 25°C,tan δ a 25°C,Meccanica,Dinamica,Rapporto tra modulo di perdita e modulo di immagazzinamento (dissipazione)
+tan δ at 25°C,tan δ a 25°C,Meccanica,Dinamica,Rapporto tra modulo di perdita e modulo elastico (valutato nel test di analisi dinamico-meccanica DMA)
 Melt Flow Index (g/10 min),Indice di fluidità a caldo (g/10 min),Funzionale,Lavorabilità,Quantità di materiale fuso che fluisce in 10 minuti
-Complex Viscosity (Trend),Viscosità complessa (andamento),Funzionale,Reologica,Comportamento della viscosità del materiale sotto sforzo oscillante
 Porosity (%),Porosità (%),Funzionale,Strutturale,Percentuale di vuoti presenti all’interno del materiale
 Adhesion Factor,Fattore di adesione,Funzionale,Interfaccia,Capacità del materiale di aderire ad altri materiali
+"Dielectric Constant (1 kHz, RT)","Costante dielettrica (1 kHz, T ambiente)",Funzionale,Elettrica,Misura della capacità isolante del materiale a 1 kHz a temperatura ambiente.
+"Dielectric Constant (1 kHz, 150°C)","Costante dielettrica (1 kHz, 150°C)",Funzionale,Elettrica,Capacità isolante a 1 kHz a temperatura elevata (150°C).
+"Breakdown Strength (MV/m, RT)","Rigidità dielettrica (MV/m, T ambiente)",Funzionale,Elettrica,Campo elettrico massimo che il materiale può sopportare senza rompersi elettricamente.
+"Breakdown Strength (MV/m, 150°C)","Rigidità dielettrica (MV/m, 150°C)",Funzionale,Elettrica,Valore a 150°C della tensione di rottura dielettrica.
+"Energy Density (J/cm³, RT)","Densità di energia (J/cm³, T ambiente)",Funzionale,Elettrica,Energia immagazzinata per unità di volume a temperatura ambiente.
+"Energy Density (J/cm³, 150°C)","Densità di energia (J/cm³, 150°C)",Funzionale,Elettrica,Energia immagazzinata per volume a temperatura elevata.
+Efficiency (%) RT,Efficienza (%) a T ambiente,Funzionale,Elettrica,Rapporto tra energia recuperata e immagazzinata a temperatura ambiente.
+Efficiency (%) 150°C,Efficienza (%) a 150°C,Funzionale,Elettrica,Efficienza del sistema isolante a 150°C.
+Hopping Distance (RT),Distanza di hopping (T ambiente),Funzionale,Elettronica,Distanza media tra stati disponibili per il trasporto elettronico a temperatura ambiente.
+Hopping Distance (150°C),Distanza di hopping (150°C),Funzionale,Elettronica,"Idem, ma a temperatura elevata."
+Trap Depth (eV),Profondità della trappola (eV),Funzionale,Elettronica,Energia necessaria per liberare una carica da una trappola nel materiale isolante.
+Trapped Charge (nC),Carica intrappolata (nC),Funzionale,Elettronica,Quantità di carica rimasta intrappolata nel materiale dopo polarizzazione.
+Cyclic Stability at 150°C (cycles),Stabilità ciclica a 150°C (cicli),Funzionale,Termica/Elettrica,Numero di cicli resistiti senza degrado significativo a 150°C.
+"Dielectric Loss (tanδ, 1 kHz, RT)","Perdita dielettrica (tanδ, 1 kHz, T ambiente)",Funzionale,Elettrica,"Energia dissipata per effetto dielettrico a 1 kHz, temperatura ambiente."
+"Dielectric Loss (tanδ, 1 kHz, 150°C)","Perdita dielettrica (tanδ, 1 kHz, 150°C)",Funzionale,Elettrica,Perdita dielettrica a 1 kHz e temperatura elevata.
+"AC Conductivity (σ_AC, S/cm, RT)","Conducibilità AC (S/cm, T ambiente)",Funzionale,Elettrica,Conducibilità in corrente alternata a temperatura ambiente.
+"AC Conductivity (σ_AC, S/cm, 150°C)","Conducibilità AC (S/cm, 150°C)",Funzionale,Elettrica,"Idem, a 150°C."
+Zeta Potential KLNS Lamellae (mV),Potenziale zeta KLNS lamelle (mV),Funzionale,Superficiale,Carica elettrica superficiale delle lamelle KLNS.
+Zeta Potential KLNS Edges (mV),Potenziale zeta KLNS bordi (mV),Funzionale,Superficiale,Carica superficiale ai bordi delle particelle KLNS.
+Zeta Potential NTCDA (mV),Potenziale zeta NTCDA (mV),Funzionale,Superficiale,Potenziale elettrico di superficie delle molecole NTCDA.
