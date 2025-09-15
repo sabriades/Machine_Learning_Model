@@ -1,8 +1,0 @@
-Polymer Matrix,Filler,Filler Concentration (wt%),Impact Toughness (kJ/m²),Elastic Modulus (MPa),Tensile Strength (MPa),Flexural Strength (MPa),Tensile Strain (%),Thermal Conductivity (W/m·K),Vicat Heat Resistance (°C),Initiation of Destruction Temp. (°C),EMI Shielding Effectiveness (dB),Filler Geometry
-LDPE,Basalt,23.08,11,,,,,,145,273,,Particulate (≤140 μm)
-LDPE,Basalt,28.57,39,,9.88,,250,,145,273,,Particulate (≤140 μm)
-LDPE,Basalt,33.33,21,,,,,,145,273,,Particulate (≤140 μm)
-HDPE,Basalt,23.08,60,,,,,,119,284,,Particulate (≤140 μm)
-HDPE,Basalt,28.57,80,524,9.88,,250,,119,284,,Particulate (≤140 μm)
-HDPE,Basalt,33.33,60,,,,,,119,284,,Particulate (≤140 μm)
-PP,Basalt,28.57,,1970,21.5,,4.33,,,,,Particulate (≤140 μm)
