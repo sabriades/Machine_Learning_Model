@@ -2,7 +2,7 @@
 
 Repository supporting the Master’s thesis project  
 **“Design and Application of a Computational Model for Estimating the Mechanical Properties of ABS Reinforced with Carbonaceous Nanofillers.”** 
-Created in **2025** during an internship, this work focuses on developing a supervised Machine Learning model to estimate key mechanical properties of ABS+GNP nanocomposites.
+Created in **2025** during my internship at CNR in Portici, this work focuses on developing a supervised Machine Learning model to estimate key mechanical properties of ABS+GNP nanocomposites.
 
 ---
 
